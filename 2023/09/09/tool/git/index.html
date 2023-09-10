@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>git教程 | IT教程</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="本地已有项目放到远程1234567891011# 创建远程git库，获取git的url git_remote_url，并且会有git的用户名和密码  如我的是Q邮箱和bat的b密码# 本地已有项目先初始化为git管理,在项目根目录内执行命令git init# 给本地git设置远程库的urlgit remote add origin [git_remote_url]# 提交文件git add .gi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git教程">
+<meta property="og:url" content="https://github2683.github.io/course/2023/09/09/tool/git/index.html">
+<meta property="og:site_name" content="IT教程">
+<meta property="og:description" content="本地已有项目放到远程1234567891011# 创建远程git库，获取git的url git_remote_url，并且会有git的用户名和密码  如我的是Q邮箱和bat的b密码# 本地已有项目先初始化为git管理,在项目根目录内执行命令git init# 给本地git设置远程库的urlgit remote add origin [git_remote_url]# 提交文件git add .gi">
+<meta property="og:locale">
+<meta property="article:published_time" content="2023-09-09T13:51:02.000Z">
+<meta property="article:modified_time" content="2023-09-09T14:12:16.000Z">
+<meta property="article:author" content="zfz">
+<meta property="article:tag" content="THML CSS JavaScript Java Tomcat MySQL Vue TypesCript Python">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/course/atom.xml" title="IT教程" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/course/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/course/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/course/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/course/" id="logo">IT教程</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/course/" id="subtitle">让每个有进取心的穷孩子不被高昂的IT培训费阻断了前进的路</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/course/">Home</a>
+        
+          <a class="main-nav-link" href="/course/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/course/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github2683.github.io/course"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-tool/git" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/course/2023/09/09/tool/git/" class="article-date">
+  <time class="dt-published" datetime="2023-09-09T13:51:02.000Z" itemprop="datePublished">2023-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      git教程
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="本地已有项目放到远程"><a href="#本地已有项目放到远程" class="headerlink" title="本地已有项目放到远程"></a>本地已有项目放到远程</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建远程git库，获取git的url git_remote_url，并且会有git的用户名和密码  如我的是Q邮箱和bat的b密码</span></span><br><span class="line"><span class="comment"># 本地已有项目先初始化为git管理,在项目根目录内执行命令</span></span><br><span class="line">git init</span><br><span class="line"><span class="comment"># 给本地git设置远程库的url</span></span><br><span class="line">git remote add origin [git_remote_url]</span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&#x27;初始化项目到远程&#x27;</span></span><br><span class="line">git push -u origin master   <span class="comment"># 这里会提示输入用户，再输入密码。</span></span><br><span class="line"><span class="comment"># 一个本地项目就有了远程保存管理的版本库了。</span></span><br><span class="line"><span class="comment"># 以后的代码推送只用 git push 即可，不用写后面的 origin master了</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github2683.github.io/course/2023/09/09/tool/git/" data-id="clmd1iqzz0003zgwaepwka2a8" data-title="git教程" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/course/2023/09/10/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/course/2023/09/08/computer/index/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">学习编程要掌握的电脑基础</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/course/archives/2023/09/">September 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/course/2023/09/10/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/course/2023/09/09/tool/git/">git教程</a>
+          </li>
+        
+          <li>
+            <a href="/course/2023/09/08/computer/index/">学习编程要掌握的电脑基础</a>
+          </li>
+        
+          <li>
+            <a href="/course/2023/09/08/font/html/">HTML的快速学习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 zfz<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/course/" class="mobile-nav-link">Home</a>
+  
+    <a href="/course/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/course/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/course/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/course/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
